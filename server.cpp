@@ -59,7 +59,7 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    std::cout << "Server is listening for connections..." << std::endl; // Print a message indicating the server is ready to accept connections
+    std::cout << "Client is waiting for connection..." << std::endl; // Print a message indicating the client is ready to accept connections
 
     while (true) {
         if ((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen)) < 0) { // Accept incoming connections in a loop
