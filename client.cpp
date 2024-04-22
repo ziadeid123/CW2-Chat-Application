@@ -121,7 +121,7 @@ int main() {
     }
 // Communication loop
     while(true) {
-        std::cout << "You: ";
+        std::cout << username << ": "; // Display username as prefix
         std::cin.ignore();  // Clear input buffer
         std::cin.getline(buffer, sizeof(buffer));
 // Hash the message
