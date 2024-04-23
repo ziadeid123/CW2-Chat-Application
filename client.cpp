@@ -1,7 +1,7 @@
-#include <iostream> //Input/output stream handling.
-#include <fstream> //File stream handling.
+#include <iostream> // Input/output stream handling.
+#include <fstream> // File stream handling.
 #include <sys/socket.h>  // Socket programming functions.
-#include <netinet/in.h> //  Internet address family functions and structures.
+#include <netinet/in.h> // Internet address family functions and structures.
 #include <unistd.h> // Standard symbolic constants and types.
 #include <arpa/inet.h>  // Functions for manipulating numeric IP addresses.
 #include <cstring> // C-style string manipulation functions.
@@ -138,7 +138,7 @@ int main() {
         valread = read(sock, buffer, sizeof(buffer));
         if (valread <= 0)
             break;
-        std::cout << "Server: " << buffer << std::endl;
+        std::cout << "Client 2: " << buffer << std::endl; // Modify the prefix here
         if (strcmp(buffer, "exit") == 0)
             break;
     }
